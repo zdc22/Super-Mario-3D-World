@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link {
+    @apply text-white block p-5 font-bold hover:text-yellow-500;
+  }
+
+  .btn {
+    @apply inline-block py-3 px-16 bg-black text-white font-bold border-transparent border-8 text-2xl rounded-3xl hover:border-gray-200 hover:bg-white hover:text-black transition duration-200;
+  }
+
+  .dot {
+    @apply h-3 w-3 bg-blue-600 rounded-full;
+  }
+
+  .arrow {
+    @apply w-4 h-4 inline-block border-yellow-300 border-solid border-t-[5px] border-r-[5px] transition-all transform rotate-45
+    w-4 h-4 inline-block border-yellow-300 border-solid border-t-[5px] border-r-[5px] transition-all transform rotate-45;
+  }
+
+  .arrow-group {
+    @apply group-hover:border-red-500 xl:group-hover:ml-4
+          group-hover:border-red-500 xl:group-hover:ml-4;
+  }
+
+  .coin-size {
+    @apply w-[50px] h-[50px] sm:w-[80px] sm:h-[80px]
+w-[50px] h-[50px] sm:w-[80px] sm:h-[80px]
+w-[50px] h-[50px] sm:w-[80px] sm:h-[80px]
+w-[50px] h-[50px] sm:w-[80px] sm:h-[80px]
+w-[50px] h-[50px] sm:w-[80px] sm:h-[80px]
+w-[50px] h-[50px] sm:w-[80px] sm:h-[80px];
+  }
+}
