@@ -18,17 +18,17 @@
     <link rel="stylesheet" href="output.css" />
   </head>
   <body>
-    <div class="w-[1920px] xsm:w-full mx-auto" id="home">
+    <div class="mx-auto w-[1920px] xsm:w-full" id="home">
       <!-- NAVEGACION -->
       <nav
-        class="nav bg-gray-800 flex justify-between lg:justify-start items-center z-20 sticky top-0 opacity-95"
+        class="nav sticky top-0 z-20 flex items-center justify-between bg-gray-800 opacity-95 lg:justify-start"
       >
         <!-- logo -->
-        <div class="logo p-2 w-1/6">
+        <div class="logo w-1/6 p-2">
           <img src="img/logo.png" width="100" alt="logo mario" />
         </div>
         <!-- menu desktop -->
-        <div class="links lg:block hidden w-1/6 md:w-4/6">
+        <div class="links hidden w-1/6 md:w-4/6 lg:block">
           <ul class="menu flex items-center justify-center gap-5">
             <li>
               <a href="#home" class="link">Home</a>
@@ -38,24 +38,24 @@
             <li>
               <a
                 href="#bowser"
-                class="border-4 border-yellow-400 text-white font-bold p-2 rounded-full hover:bg-white hover:text-black transition duration-500"
+                class="rounded-full border-4 border-yellow-400 p-2 font-bold text-white transition duration-500 hover:bg-white hover:text-black"
                 >Bowser Fury</a
               >
             </li>
             <li>
               <a
                 href="#footer"
-                class="rounded-full bg-red-500 text-white font-bold px-4 py-3 hover:text-black hover:bg-white transition duration-500"
+                class="rounded-full bg-red-500 px-4 py-3 font-bold text-white transition duration-500 hover:bg-white hover:text-black"
                 >Buy Now</a
               >
             </li>
           </ul>
         </div>
         <!-- menu mobile -->
-        <div class="block lg:hidden w-1/6 lg:w-4/6">
+        <div class="block w-1/6 lg:hidden lg:w-4/6">
           <div id="menuBtn" class="link cursor-pointer select-none">
             <svg
-              class="w-10 h-10 text-white hover:text-yellow-500"
+              class="h-10 w-10 text-white hover:text-yellow-500"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -70,7 +70,7 @@
             </svg>
           </div>
           <ul
-            class="mobile-links hidden w-full absolute z-50 left-0 text-center bg-gray-800"
+            class="mobile-links absolute left-0 z-50 hidden w-full bg-gray-800 text-center"
           >
             <li>
               <a href="#home" class="link">Home</a>
@@ -80,14 +80,14 @@
             <li>
               <a
                 href="#bowser"
-                class="inline-block my-5 border-4 border-yellow-400 text-white font-bold p-2 rounded-full hover:bg-white hover:text-black transition duration-500"
+                class="my-5 inline-block rounded-full border-4 border-yellow-400 p-2 font-bold text-white transition duration-500 hover:bg-white hover:text-black"
                 >Bowser Fury</a
               >
             </li>
             <li>
               <a
                 href="#footer"
-                class="inline-block my-5 rounded-full bg-red-500 text-white font-bold px-4 py-3 hover:text-black hover:bg-white transition duration-500"
+                class="my-5 inline-block rounded-full bg-red-500 px-4 py-3 font-bold text-white transition duration-500 hover:bg-white hover:text-black"
                 >Buy Now</a
               >
             </li>
@@ -106,27 +106,27 @@
 
       <!-- BTN HERO AND WAVE EFFECT -->
       <section class="buy">
-        <div class="bg-wave-pattern h-6 bg-repeat-x relative -top-2"></div>
+        <div class="relative -top-2 h-6 bg-wave-pattern bg-repeat-x"></div>
         <div
-          class="bg-wave-pattern-dots text-center p-4 flex md:flex-row flex-col gap-3 justify-center"
+          class="flex flex-col justify-center gap-3 bg-wave-pattern-dots p-4 text-center md:flex-row"
         >
           <a href="#" class="btn">Buy Now</a>
           <a href="#" class="btn bg-red-500">Watch the Trailer</a>
         </div>
 
-        <div class="bg-wave-pattern bg-repeat-x h-6 relative top-2"></div>
+        <div class="relative top-2 h-6 bg-wave-pattern bg-repeat-x"></div>
       </section>
 
       <!-- CARDS -->
       <section class="bg-pattern-characters-red py-28" id="play">
-        <div class="lg:container 2xl:w-3/5 md:flex gap-5 md:w-full p-3">
+        <div class="gap-5 p-3 md:flex md:w-full lg:container 2xl:w-3/5">
           <!-- CARD LEFT -->
           <div
-            class="left bg-character-mario bg-no-repeat bg-contain bg-top w-5/6 md:w-1/2 pt-52 mx-auto"
+            class="left mx-auto w-5/6 bg-character-mario bg-contain bg-top bg-no-repeat pt-52 md:w-1/2"
           >
             <!-- CARD -->
             <div
-              class="card text-center bg-white 2xl:w-5/6 mx-auto mt-72 rounded-2xl overflow-hidden xl:w-4/5"
+              class="card mx-auto mt-72 overflow-hidden rounded-2xl bg-white text-center xl:w-4/5 2xl:w-5/6"
             >
               <div class="cover bg-black">
                 <video
@@ -138,14 +138,14 @@
                 ></video>
               </div>
               <div
-                class="content bg-wave-pattern bg-repeat-x relative -top-3 py-5"
+                class="content relative -top-3 bg-wave-pattern bg-repeat-x py-5"
               >
-                <h3 class="font-black text-4xl">Play Together</h3>
+                <h3 class="text-4xl font-black">Play Together</h3>
                 <p class="text-xl">
                   Work with (or against) your fiends and family*
                 </p>
 
-                <a href="#" class="btn my-4 bg-red-500 group"
+                <a href="#" class="btn group my-4 bg-red-500"
                   >Watch the Trailer
                   <span class="arrow arrow-group"></span>
                 </a>
@@ -157,12 +157,12 @@
             </div>
           </div>
           <!-- CARD RIGHT -->
-          <div class="right w-5/6 md:w-1/2 text-center mx-auto">
-            <h2 class="font-black text-white text-6xl py-8">Avaible Now</h2>
-            <p class="font-bold text-white text-2xl mx-auto py-10 w-4/5">
+          <div class="right mx-auto w-5/6 text-center md:w-1/2">
+            <h2 class="py-8 text-6xl font-black text-white">Avaible Now</h2>
+            <p class="mx-auto w-4/5 py-10 text-2xl font-bold text-white">
               Team up for a paws-itively adorable adventure!
             </p>
-            <p class="text-white mx-auto w-4/5">
+            <p class="mx-auto w-4/5 text-white">
               Bowser is up to his old tricks again and only Mario and his
               friends can save the day! Use power-ups like the Super Bell, which
               grants catlike abilities like climbing and scratching, to overcome
@@ -170,7 +170,7 @@
             </p>
             <!-- CARD -->
             <div
-              class="card text-center bg-white 2xl:w-5/6 mx-auto mt-16 overflow-hidden rounded-2xl xl:w-4/5"
+              class="card mx-auto mt-16 overflow-hidden rounded-2xl bg-white text-center xl:w-4/5 2xl:w-5/6"
               id="explore"
             >
               <div class="cover bg-black">
@@ -183,12 +183,12 @@
                 ></video>
               </div>
               <div
-                class="content bg-wave-pattern bg-repeat-x relative -top-3 py-5"
+                class="content relative -top-3 bg-wave-pattern bg-repeat-x py-5"
               >
-                <h3 class="font-black text-4xl py-4">Explore</h3>
+                <h3 class="py-4 text-4xl font-black">Explore</h3>
                 <p class="text-xl">Prowl through some popular places.</p>
 
-                <a href="#" class="btn my-4 bg-red-500 group"
+                <a href="#" class="btn group my-4 bg-red-500"
                   >Take a look!
                   <span class="arrow arrow-group"></span>
                 </a>
@@ -202,7 +202,7 @@
         </div>
         <!-- COINS -->
         <div
-          class="footer text-center flex justify-center gap-9 pt-10"
+          class="footer flex justify-center gap-9 pt-10 text-center"
           id="bowser"
         >
           <img src="img/coin.gif" alt="coin gif" class="coin-size" />
@@ -227,13 +227,13 @@
       </section>
 
       <!-- CAT CENTER  -->
-      <section class="bg-yellow-dots h-auto">
-        <div class="bg-wave-pink h-6 bg-repeat-x relative -top-4"></div>
+      <section class="h-auto bg-yellow-dots">
+        <div class="relative -top-4 h-6 bg-wave-pink bg-repeat-x"></div>
         <div
-          class="cat xsm:w-full sm:container w-2/3 mx-auto md:flex justify-center items-center text-center py-6"
+          class="cat mx-auto w-2/3 items-center justify-center py-6 text-center sm:container md:flex xsm:w-full"
         >
-          <div class="left xl:w-1/3 lg:w-1/2 p-5">
-            <h3 class="text-yellow-900 font-black xsm:text-3xl sm:text-4xl">
+          <div class="left p-5 lg:w-1/2 xl:w-1/3">
+            <h3 class="font-black text-yellow-900 sm:text-4xl xsm:text-3xl">
               Cat <br />Transformation<br />
               Center
             </h3>
@@ -246,7 +246,7 @@
               ></a>
             </p>
           </div>
-          <div class="right xl:w-2/3 lg:w-1/2">
+          <div class="right lg:w-1/2 xl:w-2/3">
             <img
               src="img/activity_img3.png"
               alt="kids image"
@@ -258,8 +258,8 @@
 
       <!-- FOOTER -->
       <footer class="bg-black" id="footer">
-        <div class="bg-wave-pattern bg-repeat-x h-6 relative -top-4"></div>
-        <div class="container text-center py-10 w-2/3">
+        <div class="relative -top-4 h-6 bg-wave-pattern bg-repeat-x"></div>
+        <div class="container w-2/3 py-10 text-center">
           <div class="pb-5">
             <a href="#" class="btn group bg-red-500">
               Customer Support
